@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <div id="slideshow-container">
+            <img class="MySlides" src="images/ephrata-sky.jpg" alt="Town of Ephrata" />
+            <img class="MySlides" src="images/ephrata-amish.jpg" alt="Amish buggy in  Ephrata" />
+            <img class="MySlides" src="images/Ephrata-fair-2016-1.jpg" alt="Ephrata Fair" />
+            <img class="MySlides" src="images/ephrata-winter.jpg" alt="Winter holiday lights in the streets of Ephrata" />
+            <h1 id="town-name">Ephrata<a id="state">,  Pennsylvania</a></h1>
+        </div>
+        <div id="things">
+            <h2 id="things-header">Explore</h2>
+            <div id="things-container">
+                <div class="cards" id="cards-fairs">
+                    <img class="things-img" src="images/ephrata-fair.jpg" alt="Ephrata fair" />
+                    <p>Fairs</p>
+                    <p class="context">Celebrate year-round with various fairs and festivals, Whether it's the joy of the holidays or in the spirit of summer festivities, there's always a reason to come together in this town's lively atmosphere!</p>
+                </div>
+                <div class="cards" id="cards-amish">
+                    <img class="things-img" src="images/amish-buggy.jpg" alt="Amish buggy" />
+                    <p>The Amish</p>
+                    <p class="context"> Step into the past in a community rooted in 18th-century traditions. Experience horse-drawn buggies and explore farms supplying fresh produce, showcasing a lifestyle that endures through time.</p>
+                </div>
+                <div class="cards" id="cards-holiday">
+                    <img class="things-img" src="images/ephrata-christmas.jpg" alt="A couple looking at holiday lights" />
+                    <p>The Holidays</p>
+                    <p class="context">Immerse yourself in the holiday spirit as you drive through Main Street, captivated by the enchanting holiday lights, festive decorations, and a grand Christmas tree at the town center.</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h3>Want to learn more?</h3>
+            <p id="comm-link">Visit our community site <a href="https://www.ephrataboro.org/874/Our-Community">here</a> to get started.
+        </footer>
+         <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("MySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); 
+        }
+    </script>
+    </body>
+</html>
