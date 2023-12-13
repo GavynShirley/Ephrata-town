@@ -1,3 +1,9 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 body {
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
