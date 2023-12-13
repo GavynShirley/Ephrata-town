@@ -2,12 +2,15 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 0px;
+    box-shadow: 0 0 1px black;
 }
 
 body {
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
     overflow: hidden;
+    background: linear-gradient(to bottom, #219ebc, #ffffff); 
+    overflow-x: hidden;
 }
 
 #slideshow-container {
